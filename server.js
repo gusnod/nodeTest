@@ -3,7 +3,7 @@
 
 const Hapi = require('Hapi');
 
-const PORT = 80;
+const PORT = process.env.port;
 
 const server = new Hapi.Server();
 server.connection({port: PORT});
